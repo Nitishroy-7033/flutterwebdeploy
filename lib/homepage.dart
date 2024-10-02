@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -29,8 +28,11 @@ class HomePage extends StatelessWidget {
               ),
               itemBuilder: (context, index) {
                 return Container(
-                    decoration:
-                        BoxDecoration(color: Colors.deepOrange.shade200));
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: Colors.deepOrange.shade200,
+                  ),
+                );
               }),
         ));
   }
